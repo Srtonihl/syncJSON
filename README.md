@@ -80,7 +80,7 @@ ids =  document.querySelectorAll('*[name]')
 
 ### Prueba 2 - Remplazando los identficadores por el valor del JSON:
 
-La idea en esta prueba consiste en sustituir el valor del identificador por el valor del JSON..
+La idea en esta prueba consiste en sustituir el valor del identificador por el valor del JSON. Manteniendo la posición donde se encuentra, es decir podemos insertar el identificador en un atributo del elemento, insertar el valor entre etiquetas. etc 
 
 
 Fichero JSON 
