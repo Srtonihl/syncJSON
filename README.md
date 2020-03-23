@@ -5,6 +5,13 @@ SyncJSON es una prueba de concepto, con la idea de ver las distintas formas para
 
 ### Prueba 1 - Usando un identificador o el tag name:
 
+En esta prueba básica obtenemos todos los identificadores e insertamos el valor que coincide con el identificador del JSON. Insertar valores simples no supone problemas, por otra parte, es algo más complejo tenemos un Array en el JSON y necesitamos mostrarlo con una estructura predefinida. 
+
+En nuestro caso tenemos una cesta con varios productos, la idea es que se muestre siguiendo una estructura que nosotros predefinimos y por cada producto se genere dicha estructura con sus datos. 
+
+En los casos que necesitamos meter valores a los atributos no está implementado. Siguiendo el ejemplo de la cesta, podríamos añadir un nuevo valor al JSON. Donde se especifica la dirección de la imagen del producto. 
+
+
 Fichero JSON 
 ```
 data = {
@@ -67,3 +74,40 @@ ids =  document.querySelectorAll('*[name]')
 							  
 });
 ```
+
+
+
+
+### Prueba 2 - Remplazando los identficadores por el valor del JSON:
+
+La idea en esta prueba consiste en sustituir el valor del identificador por el valor del JSON..
+
+
+Fichero JSON 
+```
+data = {
+  usuario: {
+    id: 129821712812791287127774747484848,
+    nombre: "John",
+    apellidos: "Doe",
+    identificacion: "0000000000A",
+    genero: "masculino",
+    carrer: "FullStack Developer"
+  },
+  cesta: {
+    productos:[
+        {descripcion: "platano"},
+        {descripcion: "coca-cola"},
+        {descripcion: "pizza"}
+    ],		
+  },
+}
+```
+Fichero HTML 
+```
+<body>
+  <h1 id="usuario.id">usuario.nombre</h1>
+  <ul id="carrito.productos">
+    <li>descripcion</li>
+  </ul>
+</body>
