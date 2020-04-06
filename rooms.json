@@ -1,5 +1,5 @@
 rooms = [
-    { id: 0, name: "Beedroom", media: "SV3zSKV", is_open: true, navigation: [1], actions: [0,11, 13], objects: ["box", "box-tv", "box", "note"], npc: [] },
+    { id: 0, name: "Beedroom", media: "SV3zSKV", is_open: true, navigation: [1,2], actions: [0,11, 13], objects: ["box", "box-tv", "box", "note"], npc: [] },
     { id: 1, name: "Living Room", media: "DWjUfS1", is_open: true, navigation: [0,2,4], actions: [12], objects: [], npc:[] },
     { id: 2, name: "Kitchen", media: "Ts0hSBU", is_open: true, navigation: [1], actions: [12], objects: [], npc:[] },
     { id: 3, name: "Bathroom", media: "NMwg2ra", is_open: true, navigation: [0], actions: [10, 12], objects: ["wash"], npc:[] },
